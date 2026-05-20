@@ -73,14 +73,7 @@ export function HeatmapView() {
     return <div className="h-full flex items-center justify-center text-[#8b949e] text-sm bg-[#0d1117]">Loading data...</div>;
   }
 
-  const colorScale = [
-    [0.0, "#fff5f0"],
-    [0.2, "#fee0d2"],
-    [0.4, "#fcbba1"],
-    [0.6, "#fc9272"],
-    [0.8, "#fb6a4a"],
-    [1.0, "#a50f15"],
-  ];
+  const colorScale = "Reds" as const;
 
   return (
     <div className="h-full bg-[#0d1117] p-3">
