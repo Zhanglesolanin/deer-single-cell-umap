@@ -228,7 +228,7 @@ const LARGE = {
   paper_bgcolor: "#0d1117", plot_bgcolor: "#161b22",
   font: { color: "#8b949e", size: 11 },
   legend: { orientation: "h", y: -0.12, x: 0.5, xanchor: "center", font: { size: 11 }, itemsizing: "constant", itemwidth: 20 },
-  dragmode: "pan", hovermode: "closest" as const,
+  dragmode: "pan" as const, hovermode: "closest" as const,
 };
 
 const MAIN_CFG = { displayModeBar: true, displaylogo: false, responsive: true };
