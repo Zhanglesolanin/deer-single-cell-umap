@@ -223,17 +223,17 @@ function CanvasThumbnail({ meta, title, values, cellTypeColors, sampleColors }: 
   );
 }
 
-const LARGE = {
+const LARGE: any = {
   autosize: true, margin: { l: 30, r: 30, t: 30, b: 60 },
   paper_bgcolor: "#0d1117", plot_bgcolor: "#161b22",
   font: { color: "#8b949e", size: 11 },
-  legend: { orientation: "h", y: -0.12, x: 0.5, xanchor: "center", font: { size: 11 }, itemsizing: "constant" as const, itemwidth: 20 },
-  dragmode: "pan" as const, hovermode: "closest" as const,
+  legend: { orientation: "h", y: -0.12, x: 0.5, xanchor: "center", font: { size: 11 }, itemsizing: "constant", itemwidth: 20 },
+  dragmode: "pan", hovermode: "closest",
 };
 
-const MAIN_CFG = { displayModeBar: true, displaylogo: false, responsive: true };
+const MAIN_CFG: any = { displayModeBar: true, displaylogo: false, responsive: true };
 
-const SMALL = {
+const SMALL: any = {
   autosize: true, margin: { l: 10, r: 10, t: 20, b: 10 },
   paper_bgcolor: "#161b22", plot_bgcolor: "#161b22",
   font: { color: "#8b949e", size: 8 },
