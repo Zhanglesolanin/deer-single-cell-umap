@@ -22,7 +22,16 @@ export function HeatmapView() {
   const { plotData } = useMemo(() => {
     if (!clusterStats || geneOrder.length === 0) return { plotData: [] };
 
-    const data = [];
+    const data: Array<{
+      x: number;
+      y: number;
+      avgExp: number;
+      normalizedExp: number;
+      fraction: number;
+      gene: string;
+      cellType: string;
+      size: number;
+    }> = [];
 
     geneOrder.forEach((gene, geneIdx) => {
       const geneData = cellTypeOrder.map(cellType => clusterStats[gene]?.[cellType]?.avg ?? 0);
