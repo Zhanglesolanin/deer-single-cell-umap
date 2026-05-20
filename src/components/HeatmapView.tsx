@@ -135,12 +135,12 @@ export function HeatmapView() {
               },
               shapes: [
                 ...geneOrder.map((_, i) => ({
-                  type: "line",
+                  type: "line" as const,
                   x0: i - 0.5, y0: -0.5, x1: i - 0.5, y1: cellTypeOrder.length - 0.5,
                   line: { color: "#21262d", width: 1 },
                 })),
                 ...cellTypeOrder.map((_, i) => ({
-                  type: "line",
+                  type: "line" as const,
                   x0: -0.5, y0: i - 0.5, x1: geneOrder.length - 0.5, y1: i - 0.5,
                   line: { color: "#21262d", width: 1 },
                 })),
