@@ -17,7 +17,7 @@ export default function Plot(props: PlotParams) {
       'resetScale2d',
       'hoverClosestCartesian',
       'hoverCompareCartesian',
-    ],
+    ] as any,
   } : {
     modeBarButtonsToRemove: [
       'lasso2d',
@@ -28,7 +28,7 @@ export default function Plot(props: PlotParams) {
       'resetScale2d',
       'hoverClosestCartesian',
       'hoverCompareCartesian',
-    ],
+    ] as any,
   };
 
   return <Plotly {...props} config={modifiedConfig} />;
