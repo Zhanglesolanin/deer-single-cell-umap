@@ -78,6 +78,7 @@ export default function Home() {
               {sampleInfo.total_cells.toLocaleString()} cells &middot; {Object.keys(sampleInfo.cell_types).length} cell types
             </span>
           )}
+          <span className="ml-5 text-xs font-bold text-[#00acd2] tracking-wider">BGI CELL</span>
           <div className="ml-5 flex rounded-lg bg-[#21262d] p-0.5">
             {TAB_ORDER.map((tab) => (
               <button key={tab} onClick={() => setViewMode(tab)}
